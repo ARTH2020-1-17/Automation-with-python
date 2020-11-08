@@ -170,8 +170,7 @@ def configure_datanode():
         create directory if not
         Edit hdfs-site.xml 
         Edit core-site.xml
-        Format name node
-        Start name node
+        Start data node
     '''
     configuration_status = True
     dir_path = ''
@@ -179,7 +178,7 @@ def configure_datanode():
         print(colored('Data Node Directory is not set. Do you want to set it  to continue?[Y/n]','green'))
         choice = input()
         if (choice == "N" or choice == "n"):
-            print(colored('Can not process... Set Name node directory path to continue...','red'))
+            print(colored('Can not process... Set Data node directory path to continue...','red'))
             configuration_status = False
             return configuration_status
         else:
