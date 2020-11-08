@@ -6,9 +6,6 @@ from termcolor import colored
 
 #print(colored('hello', 'red'), colored('world', 'green'))
 
-IS_NAMENODE =  False
-IS_SLAVENODE = False
-IS_CLIENTNODE = False
 
 NAMENODE_DIR_PATH = ''
 DATANODE_DIR_PATH = ''
@@ -178,7 +175,7 @@ def configure_datanode():
     '''
     configuration_status = True
     dir_path = ''
-    if NAMENODE_DIR_PATH == '':
+    if DATANODE_DIR_PATH == '':
         print(colored('Data Node Directory is not set. Do you want to set it  to continue?[Y/n]','green'))
         choice = input()
         if (choice == "N" or choice == "n"):
