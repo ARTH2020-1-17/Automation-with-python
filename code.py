@@ -142,7 +142,7 @@ def lvmconf():
 	elif lvm == 0:
 		vgname2=input("Entyer vg name:")
 		lvname=input("Enter lv name:")
-		lv_disp=os.system("lvdisplay {}/{}".format(vgname2,lvname))
+		lv_display=os.system("lvdisplay {}/{}".format(vgname2,lvname))
 		print(lv_display)
 	else:
 		print("invalid input chech once again.")
