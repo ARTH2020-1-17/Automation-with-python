@@ -29,7 +29,7 @@ def dockerconf():
         print('docker is not installed')
         pass
     else :
-        print("-----------DOCKER----------")
+        print("-----------DOCKER-----------")
         print("1. Docker daemon start/stop/status")
         print("2. Show docker process")
         print("3. Show docker images")
